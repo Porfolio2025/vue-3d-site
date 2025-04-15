@@ -22,7 +22,7 @@ jobs:
           chmod 600 key.pem
 
           ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@$HOST << 'EOF'
-            cd /home/ec2-user/nombre-del-repo
+            cd /home/ec2-user/vue-3d-site
             git pull origin test
             sudo docker stop nombre-app || true
             sudo docker rm ombre-app || true
