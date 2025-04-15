@@ -115,7 +115,7 @@ const getSpace = (sourceName) => {
       </div>
 
       <div class="pr-[48px]! pl-[48px]!">
-        <p>HSP S13 2000-2022 Special UC131S</p>
+        <p>HSP S13 2000-2025 Special UC131S</p>
         <div class="h-[16px]"></div>
 
         <template v-if="showBiosInfo">
@@ -177,7 +177,7 @@ const getSpace = (sourceName) => {
       <div
         class="bg-black p-[24px]! border-[7px] border-white text-center max-w-[500px]! min-w-[300px]!"
       >
-        <p>Christian Carrasco Portfolio Showcase 2022</p>
+        <p>Christian Carrasco Portfolio Showcase 2025</p>
 
         <template v-if="mobileWarning">
           <br />
