@@ -11,7 +11,7 @@ import { ref, onMounted } from "vue";
 import LoadingScreen from "./components/LoadingScreen.vue";
 import HelpPrompt from "./components/HelpPrompt.vue";
 import eventBus from "./EventBus";
-import { createUI, createVolumeUI } from "./UI";
+import { createUI, createVolumeUI } from "./ui.ts";
 
 const loading = ref(true);
 
@@ -19,7 +19,9 @@ onMounted(() => {
   console.log("🟢 App.vue montado. Escuchando 'loadingScreenDone'...");
 
   eventBus.on("loadingScreenDone", () => {
-    console.log("✅ Evento 'loadingScreenDone' recibido. Ocultando pantalla de carga.");
+    console.log(
+      "✅ Evento 'loadingScreenDone' recibido. Ocultando pantalla de carga."
+    );
     loading.value = false;
   });
 
