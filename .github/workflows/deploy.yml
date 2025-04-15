@@ -29,6 +29,6 @@ jobs:
 
             sudo docker build -t nombre-imagen .
 
-            sudo docker run -d -p PUERTO:PUERTO --name nombre-imagen nombre-app
+            sudo docker run -d -p 3001:3001 --name nombre-imagen nombre-app
 
           EOF
