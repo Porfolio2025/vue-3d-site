@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 
-RUN npm build-only
+RUN npm build
 
 
 RUN npm install -g serve
