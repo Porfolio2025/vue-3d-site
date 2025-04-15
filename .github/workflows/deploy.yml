@@ -24,8 +24,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@$HOST << 'EOF'
             cd /home/ec2-user/vue-3d-site
             git pull origin test
-            sudo docker stop portfolio-3d|| true
-            sudo docker rm portfolio-3d || true
+            sudo docker stop portfolio-3d--prod || true
+            sudo docker rm portfolio-3d--prod || true
 
             sudo docker build -t portfolio-3d .
 
