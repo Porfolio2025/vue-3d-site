@@ -1,4 +1,4 @@
-import { createUI, createVolumeUI } from "./UI";
+import { createUI, createVolumeUI } from "./ui.ts";
 
 export default class UI {
     constructor() {
