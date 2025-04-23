@@ -44,7 +44,12 @@ watch(freeCamActive, (newState) => {
     <img
       id="prevent-click"
       :src="freeCamActive ? mouseIcon : cameraIcon"
-      :style="{ opacity: isActive ? 0.2 : isHovering ? 0.8 : 1 }"
+      :style="{
+        opacity: isActive ? 0.2 : isHovering ? 0.8 : 1,
+        width: windowWidth < 768 ? '1.5rem' : '2rem',
+        height: '0.5rem',
+        objectFit: 'contain',
+      }"
       :width="windowWidth < 768 ? 8 : 10"
     />
   </div>

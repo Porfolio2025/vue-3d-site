@@ -177,7 +177,7 @@ const getSpace = (sourceName) => {
       <div
         class="bg-black p-[24px]! border-[7px] border-white text-center max-w-[500px]! min-w-[300px]!"
       >
-        <p>Christian Carrasco Portfolio Showcase 2025</p>
+        <p>Christian Carrasco Portfolio 2025</p>
 
         <template v-if="mobileWarning">
           <br />
@@ -189,7 +189,7 @@ const getSpace = (sourceName) => {
         </template>
 
         <div class="flex items-end">
-          <p>Click start to begin&nbsp;</p>
+          <p>Haz click en start&nbsp;</p>
           <span class="blinking-cursor"></span>
         </div>
 
