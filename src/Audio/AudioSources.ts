@@ -13,7 +13,7 @@ export class AudioSource {
     update() {}
 }
 export class ComputerAudio extends AudioSource {
-    lastKey: string;
+    lastKey!: string;
 
     constructor(manager: AudioManager) {
         super(manager);
@@ -69,7 +69,7 @@ export class ComputerAudio extends AudioSource {
 }
 
 export class AmbienceAudio extends AudioSource {
-    poolKey: string;
+    poolKey!: string;
 
     constructor(manager: AudioManager) {
         super(manager);

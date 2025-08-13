@@ -8,7 +8,7 @@ const DEFAULT_REF_DISTANCE = 10000;
 export default class Audio {
     application: Application;
     listener: THREE.AudioListener;
-    context: AudioContext;
+    context!: AudioContext;
     loadedAudio: { [key in string]: LoadedAudio };
     audioPool: { [key in string]: THREE.PositionalAudio | THREE.Audio };
     audioSources: {

@@ -16,19 +16,19 @@ let instance: Application | null = null;
 
 export default class Application {
     private static instance: Application;
-    debug: Debug;
-    sizes: Sizes;
-    time: Time;
-    scene: THREE.Scene;
-    cssScene: THREE.Scene;
-    overlayScene: THREE.Scene;
-    resources: Resources;
-    camera: Camera;
-    renderer: Renderer;
-    world: World;
-    mouse: Mouse;
-    loading: Loading;
-    ui: UI;
+    debug!: Debug;
+    sizes!: Sizes;
+    time!: Time;
+    scene!: THREE.Scene;
+    cssScene!: THREE.Scene;
+    overlayScene!: THREE.Scene;
+    resources!: Resources;
+    camera!: Camera;
+    renderer!: Renderer;
+    world!: World;
+    mouse!: Mouse;
+    loading!: Loading;
+    ui!: UI;
     stats: Stats | undefined;
 
     constructor() {

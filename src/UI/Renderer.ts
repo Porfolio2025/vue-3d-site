@@ -16,14 +16,14 @@ export default class Renderer {
     scene: THREE.Scene;
     cssScene: THREE.Scene;
     time: Time;
-    overlay: THREE.Mesh;
+    overlay!: THREE.Mesh;
     overlayScene: THREE.Scene;
     camera: Camera;
-    overlayInstance: THREE.WebGLRenderer;
-    instance: THREE.WebGLRenderer;
-    cssInstance: CSS3DRenderer;
-    raiseExposure: boolean;
-    uniforms: {
+    overlayInstance!: THREE.WebGLRenderer;
+    instance!: THREE.WebGLRenderer;
+    cssInstance!: CSS3DRenderer;
+    raiseExposure!: boolean;
+    uniforms!: {
         [uniform: string]: THREE.IUniform<any>;
     };
 
