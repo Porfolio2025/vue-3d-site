@@ -5,7 +5,7 @@ import Resources from './Resources';
 import UIEventBus from '../UI/EventBus';
 
 export default class Loading extends EventEmitter {
-    progress: number;
+    progress!: number;
     application: Application;
     resources: Resources;
     scene: THREE.Scene;

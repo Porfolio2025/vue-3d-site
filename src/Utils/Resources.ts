@@ -16,7 +16,7 @@ export default class Resources extends EventEmitter {
     };
     toLoad: number;
     loaded: number;
-    loaders: {
+    loaders!: {
         gltfLoader: GLTFLoader;
         textureLoader: THREE.TextureLoader;
         cubeTextureLoader: THREE.CubeTextureLoader;

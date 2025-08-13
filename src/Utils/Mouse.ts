@@ -4,7 +4,7 @@ export default class Mouse extends EventEmitter {
     x: number;
     y: number;
     inComputer: boolean;
-    application: Application;
+    application!: Application;
 
     constructor() {
         super();
