@@ -189,7 +189,7 @@ const getSpace = (sourceName) => {
         </template>
 
         <div class="flex items-end">
-          <p>Haz click en start&nbsp;</p>
+          <p>Click on start&nbsp;</p>
           <span class="blinking-cursor"></span>
         </div>
 

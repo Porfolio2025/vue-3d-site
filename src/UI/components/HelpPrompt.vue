@@ -2,7 +2,7 @@
 import { ref, onMounted, watch } from "vue";
 import UIEventBus from "../EventBus";
 
-const HELP_TEXT = "Haz click para empezar";
+const HELP_TEXT = "Click to start";
 
 const helpText = ref("");
 const visible = ref(true);
