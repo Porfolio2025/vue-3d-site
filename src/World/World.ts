@@ -8,19 +8,21 @@ import CoffeeSteam from './CoffeeSteam';
 import Cursor from './Cursor';
 import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
+import * as THREE from 'three';
+
 export default class World {
     application: Application;
     scene: THREE.Scene;
     resources: Resources;
 
     // Objects in the scene
-    environment: Environment;
-    decor: Decor;
-    computerSetup: ComputerSetup;
-    monitorScreen: MonitorScreen;
-    coffeeSteam: CoffeeSteam;
-    cursor: Cursor;
-    audioManager: AudioManager;
+    environment!: Environment;
+    decor!: Decor;
+    computerSetup!: ComputerSetup;
+    monitorScreen!: MonitorScreen;
+    coffeeSteam!: CoffeeSteam;
+    cursor!: Cursor;
+    audioManager!: AudioManager;
 
     constructor() {
         this.application = new Application();

@@ -6,8 +6,7 @@ export default class Cursor {
     application: Application;
     scene: THREE.Scene;
     camera: Camera;
-    mouse: THREE.Vector2;
-
+    mouse!: THREE.Vector2;
     constructor() {
         this.application = new Application();
         this.scene = this.application.scene;
@@ -16,7 +15,7 @@ export default class Cursor {
 
         // create a cursor as a circle
         const cursor = new THREE.Mesh(
-            new THREE.SphereBufferGeometry(2000, 32),
+            new THREE.SphereGeometry(2000, 32),
             new THREE.MeshBasicMaterial({
                 color: 0xffffff,
                 side: THREE.DoubleSide,

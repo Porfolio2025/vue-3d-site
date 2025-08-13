@@ -10,13 +10,13 @@ export default class BakedModel {
         this.texture = texture;
 
         this.texture.flipY = false;
-        this.texture.encoding = THREE.sRGBEncoding;
+        this.texture.encoding = THREE.SRGBColorSpace;
 
         this.material = new THREE.MeshBasicMaterial({
             map: this.texture,
         });
 
-        this.model.scene.traverse((child) => {
+        this.model.scene.traverse((child: any) => {
             if (child instanceof THREE.Mesh) {
                 if (scale) child.scale.set(scale, scale, scale);
                 child.material.map = this.texture;

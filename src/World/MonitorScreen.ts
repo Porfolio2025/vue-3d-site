@@ -20,18 +20,18 @@ export default class MonitorScreen extends EventEmitter {
     scene: THREE.Scene;
     cssScene: THREE.Scene;
     resources: Resources;
-    debug: Debug;
+    debug!: Debug;
     sizes: Sizes;
-    debugFolder: GUI;
+    debugFolder!: GUI;
     screenSize: THREE.Vector2;
     position: THREE.Vector3;
     rotation: THREE.Euler;
     camera: Camera;
-    prevInComputer: boolean;
+    prevInComputer!: boolean;
     shouldLeaveMonitor: boolean;
-    inComputer: boolean;
+    inComputer!: boolean;
     mouseClickInProgress: boolean;
-    dimmingPlane: THREE.Mesh;
+    dimmingPlane!: THREE.Mesh;
     videoTextures: { [key in string]: THREE.VideoTexture };
 
     constructor() {
@@ -184,7 +184,7 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'https://os.chrisdevstudio.com/';
+        iframe.src = 'https://portfolio-inner-page.vercel.app/';
         /**
          * Use dev server is query params are present
          *
@@ -194,7 +194,7 @@ export default class MonitorScreen extends EventEmitter {
          */
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('dev')) {
-            iframe.src = 'https://os.chrisdevstudio.com/';
+            iframe.src = 'https://portfolio-inner-page.vercel.app/';
         }
         iframe.style.width = this.screenSize.width + 'px';
         iframe.style.height = this.screenSize.height + 'px';

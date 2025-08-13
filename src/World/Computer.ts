@@ -7,7 +7,7 @@ export default class Computer {
     application: Application;
     scene: THREE.Scene;
     resources: Resources;
-    bakedModel: BakedModel;
+    bakedModel!: BakedModel;
 
     constructor() {
         this.application = new Application();
